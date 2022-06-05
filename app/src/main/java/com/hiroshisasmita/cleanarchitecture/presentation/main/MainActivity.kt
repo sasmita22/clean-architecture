@@ -20,8 +20,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
         get() = ActivityMainBinding::inflate
 
     override fun setupViews() {
-        lifecycleScope.launch {
-            delay(500)
+        binding.btNext.setOnClickListener {
             MoviesActivity.newInstance(this@MainActivity)
         }
     }

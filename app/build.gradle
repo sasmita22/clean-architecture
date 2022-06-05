@@ -25,6 +25,7 @@ android {
 
             buildConfigField "String", "MOVIE_API_KEY", "\"8abf0610f63f148378b21a20d1a10f2d\""
             buildConfigField "String", "MOVIE_BASE_URL", "\"https://api.themoviedb.org/3/\""
+            buildConfigField "String", "IMAGE_BASE_URL", "\"https://image.tmdb.org/t/p/w500/\""
         }
         release {
             minifyEnabled false
@@ -32,6 +33,7 @@ android {
 
             buildConfigField "String", "MOVIE_API_KEY", "\"8abf0610f63f148378b21a20d1a10f2d\""
             buildConfigField "String", "MOVIE_BASE_URL", "\"https://api.themoviedb.org/3/\""
+            buildConfigField "String", "IMAGE_BASE_URL", "\"https://image.tmdb.org/t/p/w500/\""
         }
     }
     compileOptions {
@@ -64,4 +66,8 @@ dependencies {
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+
+    def paging_version = "3.1.1"
+    implementation "androidx.paging:paging-runtime:$paging_version"
+    testImplementation "androidx.paging:paging-common:$paging_version"
 }

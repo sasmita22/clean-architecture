@@ -6,4 +6,7 @@ import javax.inject.Qualifier
 annotation class QualifierDefaultInterceptor
 
 @Qualifier
-annotation class QualifierLoggingInterceptor
+annotation class QualifierBodyLoggingInterceptor
+
+@Qualifier
+annotation class QualifierHeaderLoggingInterceptor

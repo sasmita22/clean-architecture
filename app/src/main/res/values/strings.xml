@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Clean Architecture</string>
+    <string name="movie_image_content_description">movie-image-content-description</string>
 </resources>

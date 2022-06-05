@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/activity_main.xml" value="0.12777777777777777" />
         <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/activity_movies.xml" value="0.15729166666666666" />
+        <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/layout_item_popular_movie.xml" value="0.176" />
       </map>
     </option>
   </component>

@@ -24,19 +24,31 @@ object NetworkModule {
     }
 
     @Provides
-    @QualifierLoggingInterceptor
-    fun providesLoggingInterceptor(): Interceptor {
-        return HttpLoggingInterceptor()
+    @QualifierBodyLoggingInterceptor
+    fun providesBodyLoggingInterceptor(): Interceptor {
+        return HttpLoggingInterceptor().also {
+            it.level = HttpLoggingInterceptor.Level.BODY
+        }
+    }
+
+    @Provides
+    @QualifierHeaderLoggingInterceptor
+    fun providesHeaderLoggingInterceptor(): Interceptor {
+        return HttpLoggingInterceptor().also {
+            it.level = HttpLoggingInterceptor.Level.HEADERS
+        }
     }
 
     @Provides
     fun providesClient(
         @QualifierDefaultInterceptor defaultInterceptor: Interceptor,
-        @QualifierLoggingInterceptor loggingInterceptor: Interceptor,
+        @QualifierBodyLoggingInterceptor bodyLoggingInterceptor: Interceptor,
+        @QualifierHeaderLoggingInterceptor headerLoggingInterceptor: Interceptor
     ): OkHttpClient {
         return OkHttpClient.Builder()
             .addInterceptor(defaultInterceptor)
-            .addInterceptor(loggingInterceptor)
+            .addInterceptor(bodyLoggingInterceptor)
+            .addInterceptor(headerLoggingInterceptor)
             .build()
     }
 
