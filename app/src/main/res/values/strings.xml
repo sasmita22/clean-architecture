@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">Clean Architecture</string>
     <string name="movie_image_content_description">movie-image-content-description</string>
+    <string name="no_internet_error_message">Jaringan tidak stabil, silahkan periksa pengaturan jaringan</string>
+    <string name="something_went_wrong_try_again_message">Terjadi kesalahan, silahkan coba beberapa saat lagi</string>
+    <string name="wording_empty_data">Empty Data</string>
+    <string name="title_retry">Muat Ulang</string>
 </resources>

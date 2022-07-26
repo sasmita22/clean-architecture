@@ -1,7 +1,7 @@
 package com.hiroshisasmita.cleanarchitecture.domain.usecase
 
 import androidx.paging.PagingData
-import com.hiroshisasmita.android_core.base.UseCase
+import com.hiroshisasmita.android_core.base.domain.UseCase
 import com.hiroshisasmita.cleanarchitecture.data.repository.IMovieRepository
 import com.hiroshisasmita.cleanarchitecture.domain.model.PopularMovieDomain
 import com.hiroshisasmita.cleanarchitecture.domain.usecase.GetPopularMoviesUseCase.RequestValues

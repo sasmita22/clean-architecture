@@ -4,8 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/activity_main.xml" value="0.12777777777777777" />
-        <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/activity_movies.xml" value="0.15729166666666666" />
+        <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/activity_movies.xml" value="0.264" />
         <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/layout_item_popular_movie.xml" value="0.176" />
+        <entry key="..\:/Users/hiros/AndroidStudioProjects/github/CleanArchitecture/app/src/main/res/layout/layout_paging_load_state.xml" value="0.4" />
       </map>
     </option>
   </component>

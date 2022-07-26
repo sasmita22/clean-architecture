@@ -5,7 +5,6 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.map
 import com.hiroshisasmita.cleanarchitecture.data.network.datasource.IRemoteDataSource
-import com.hiroshisasmita.cleanarchitecture.data.network.response.PopularMovieResponseDTO
 import com.hiroshisasmita.cleanarchitecture.data.pagingsource.PopularMoviePagingSource
 import com.hiroshisasmita.cleanarchitecture.domain.model.PopularMovieDomain
 import kotlinx.coroutines.flow.Flow
@@ -25,6 +24,6 @@ class MovieRepository @Inject constructor(
             }
         ).flow.map { pagingData ->
                 pagingData.map { PopularMovieDomain.parse(it) }
-            }
+        }
     }
 }

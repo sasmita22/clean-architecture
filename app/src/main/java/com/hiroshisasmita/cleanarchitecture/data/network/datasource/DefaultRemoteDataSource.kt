@@ -2,7 +2,7 @@ package com.hiroshisasmita.cleanarchitecture.data.network.datasource
 
 import com.hiroshisasmita.cleanarchitecture.data.network.query.PopularMovieQuery
 import com.hiroshisasmita.cleanarchitecture.data.network.response.PopularMovieResponseDTO
-import com.hiroshisasmita.cleanarchitecture.data.network.retrofithandler.handleApi
+import com.hiroshisasmita.cleanarchitecture.data.network.retrofitadapter.PaginationResponseAdapter
 import com.hiroshisasmita.cleanarchitecture.data.network.service.MovieService
 import com.hiroshisasmita.cleanarchitecture.data.network.wrapper.PaginationResponseWrapper
 import kotlinx.coroutines.Dispatchers
@@ -15,7 +15,8 @@ class DefaultRemoteDataSource @Inject constructor(
 
     override suspend fun fetchPopularMovies(query: PopularMovieQuery): PaginationResponseWrapper<PopularMovieResponseDTO> =
         withContext(Dispatchers.IO) {
-            return@withContext api.getPopularMovies(query.toMap()).handleApi()
-                ?: PaginationResponseWrapper.defaultValue()
+            PaginationResponseAdapter.handleApi {
+                api.getPopularMovies(query.toMap())
+            }
         }
 }
