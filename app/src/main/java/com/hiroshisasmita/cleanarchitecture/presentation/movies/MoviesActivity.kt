@@ -74,6 +74,10 @@ class MoviesActivity : BaseViewModelActivity<MoviesViewModel, ActivityMoviesBind
         srlMovies.setOnRefreshListener {
             viewModel.fetchPopularMovies()
         }
+
+        btRetry.setOnClickListener {
+            adapter.refresh()
+        }
     }
 
     private fun onRetry() {
