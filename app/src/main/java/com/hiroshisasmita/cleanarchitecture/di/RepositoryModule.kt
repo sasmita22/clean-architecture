@@ -1,6 +1,6 @@
 package com.hiroshisasmita.cleanarchitecture.di
 
-import com.hiroshisasmita.cleanarchitecture.data.repository.IMovieRepository
+import com.hiroshisasmita.cleanarchitecture.domain.repository.IMovieRepository
 import com.hiroshisasmita.cleanarchitecture.data.repository.MovieRepository
 import dagger.Binds
 import dagger.Module

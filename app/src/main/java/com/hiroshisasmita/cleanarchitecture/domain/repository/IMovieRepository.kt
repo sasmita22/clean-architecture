@@ -1,4 +1,4 @@
-package com.hiroshisasmita.cleanarchitecture.data.repository
+package com.hiroshisasmita.cleanarchitecture.domain.repository
 
 import androidx.paging.PagingData
 import com.hiroshisasmita.cleanarchitecture.domain.model.PopularMovieDomain

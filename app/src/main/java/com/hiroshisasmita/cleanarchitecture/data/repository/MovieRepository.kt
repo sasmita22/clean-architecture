@@ -7,6 +7,7 @@ import androidx.paging.map
 import com.hiroshisasmita.cleanarchitecture.data.network.datasource.IRemoteDataSource
 import com.hiroshisasmita.cleanarchitecture.data.pagingsource.PopularMoviePagingSource
 import com.hiroshisasmita.cleanarchitecture.domain.model.PopularMovieDomain
+import com.hiroshisasmita.cleanarchitecture.domain.repository.IMovieRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 import javax.inject.Inject
